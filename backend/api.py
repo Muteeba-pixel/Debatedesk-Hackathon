@@ -38,7 +38,7 @@ class DebateRequest(BaseModel):
     )
 
 
-@app.get("/")
+@app.get("/api/")
 def home():
 
     return {
@@ -47,7 +47,7 @@ def home():
     }
 
 
-@app.get("/health")
+@app.get("/api/health")
 def health_check():
 
     return {
@@ -58,7 +58,7 @@ def health_check():
     }
 
 
-@app.post("/debate")
+@app.post("/api/debate")
 def create_debate(request: DebateRequest):
 
     if not os.environ.get("GROQ_API_KEY"):
@@ -86,4 +86,3 @@ def create_debate(request: DebateRequest):
             status_code=500,
             detail=f"Debate generation failed: {str(e)}"
         )
-      
