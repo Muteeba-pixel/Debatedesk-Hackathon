@@ -1,0 +1,6 @@
+{
+  "name": "DebateDesk — Multi-Agent Debate for Decisions",
+  "description": "Multi-agent AI debate platform for high-stakes technical and business decisions featuring Pro, Con, Moderator, and Judge agents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
